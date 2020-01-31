@@ -16,7 +16,10 @@ namespace Rainnier.Alg
         {
             //var dete = new BeautyOfProgramming.Ch1.Question1();
             int[] arr = { 1, -2, 3, 5, -2, 6, -1,6,-100,5,2,3 };
-            //Question1.ConsumeCPU(40);
+            int[] arr4 = { 1,2,5,8,10 };
+            string[] arr5 = { "bc", "de" };
+            Console.WriteLine(BinarySearch.Solve3(arr5,0,1,"aa"));
+            //Question1.ConsumeCPU(40); 
             //BeautyOfProgramming.Ch1.Question1.SinConsumeCPU();
             var a = new FrogJump();
             var b = new FindOnce();

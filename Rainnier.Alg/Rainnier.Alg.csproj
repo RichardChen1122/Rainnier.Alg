@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arr\BinarySearch.cs" />
     <Compile Include="arr\FindFirstNotOccur.cs" />
     <Compile Include="arr\FindOnce.cs" />
     <Compile Include="arr\FrogJump.cs" />
