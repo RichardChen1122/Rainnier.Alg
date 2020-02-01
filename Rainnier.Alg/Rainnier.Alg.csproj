@@ -54,6 +54,7 @@
     <Compile Include="BeautyOfProgramming\Ch1\Question2.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question1.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question14.cs" />
+    <Compile Include="BeautyOfProgramming\Ch2\Question16.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question5.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question7.cs" />
     <Compile Include="Program.cs" />
