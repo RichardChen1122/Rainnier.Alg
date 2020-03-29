@@ -48,20 +48,31 @@
     <Compile Include="arr\BinarySearch.cs" />
     <Compile Include="arr\FindFirstNotOccur.cs" />
     <Compile Include="arr\FindOnce.cs" />
+    <Compile Include="arr\FindOnlyOnce.cs" />
     <Compile Include="arr\FrogJump.cs" />
     <Compile Include="arr\LeetCode75.cs" />
+    <Compile Include="arr\MaximumLengthOfTargetSum.cs" />
     <Compile Include="BeautyOfProgramming\Ch1\Question1.cs" />
     <Compile Include="BeautyOfProgramming\Ch1\Question2.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question1.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question14.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question16.cs" />
+    <Compile Include="BeautyOfProgramming\Ch2\Question19.cs" />
+    <Compile Include="BeautyOfProgramming\Ch2\Question20.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question5.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question7.cs" />
+    <Compile Include="graph\FindLoop.cs" />
+    <Compile Include="graph\model\DemoGraph.cs" />
+    <Compile Include="graph\model\Vertex.cs" />
+    <Compile Include="linkList\HasLoop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="str\MinimumContainesSubStr.cs" />
     <Compile Include="str\RemoveSpecialChar.cs" />
     <Compile Include="str\StringSubstitution.cs" />
+    <Compile Include="tree\FindNextNode.cs" />
+    <Compile Include="tree\model\Node.cs" />
+    <Compile Include="tree\model\NodeWithParent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

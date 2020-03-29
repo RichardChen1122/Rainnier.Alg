@@ -7,6 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Rainnier.Alg.BeautyOfProgramming.Ch1;
 using Rainnier.Alg.BeautyOfProgramming.Ch2;
+using System.Collections;
+using Rainnier.Alg.linkList;
+using Rainnier.Alg.graph.model;
 
 namespace Rainnier.Alg
 {
@@ -14,6 +17,35 @@ namespace Rainnier.Alg
     {
         static void Main(string[] args)
         {
+            DemoGraph g = new DemoGraph();
+            g.AddVertex(1);
+            g.AddVertex(2);
+            g.AddVertex(3);
+            g.AddVertex(4);
+            g.AddVertex(5);
+            g.AddEdge(0, 1);
+            g.AddEdge(0, 2);
+            g.AddEdge(2, 3);
+            g.AddEdge(1, 3);
+            g.AddEdge(1, 4);
+            g.AddEdge(3, 4);
+            g.TopologySort();
+            Console.ReadKey();
+
+
+            int[][] superArray = new int[3][] { new int[] { 4, 5 }, new int[] { 1, 2 }, new int[] { 4, 9 } };
+
+            Console.WriteLine(Question19.Solve(superArray, new int[] { 1, 6 }));
+  
+            int[] arr55 = { -4, -6, -4, -6, -4, 100 };
+            int[] arr6 = { 1,2,3,3 };
+            Console.WriteLine(MaximumLengthOfTargetSum.Solve(arr6, 5));
+
+
+            Console.WriteLine(FindOnlyOnce.Solve(arr55, 3));
+            //var dete = new BeautyOfProgramming.Ch1.Question1();
+            //var dete = new BeautyOfProgramming.Ch1.Question1();
+            //var dete = new BeautyOfProgramming.Ch1.Question1();
             //var dete = new BeautyOfProgramming.Ch1.Question1();
             int[] arr = { 1, -2, 3, 5, -2, 6, -1,6,-100,5,2,3 };
             int[] arr3 = { 1,2};
@@ -33,8 +65,7 @@ namespace Rainnier.Alg
             Console.WriteLine(q14.MaximumSum2(arr));
             var q5 = new Question5();
             Console.WriteLine(q5.Solve(arr,3).PrintString());
-            var k = new Question2();
-            k.Anwser();
+            
             
             int tt = 'a';
             Console.ReadKey();
