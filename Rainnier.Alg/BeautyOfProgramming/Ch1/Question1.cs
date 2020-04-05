@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,7 +11,29 @@ namespace Rainnier.Alg.BeautyOfProgramming.Ch1
 {
     class Question1
     {
-        
+        [DllImport("kernel32")]
+        static extern int GetCurrentThreadId();
+        static void RunThreadOnSpecificCPUCore()
+        {
+            Thread t = new Thread(
+            new ThreadStart(DoWork)
+
+            );
+            t.Start();
+        }
+        static void DoWork()
+        {
+            foreach (ProcessThread pt in Process.GetCurrentProcess().Threads)
+            {
+                int utid = GetCurrentThreadId();
+                if (utid == pt.Id)
+                {
+                    pt.ProcessorAffinity = (IntPtr)(1); // Set affinity for this thread to CPU #1
+                    Console.WriteLine("Set");
+                }
+            }
+            SinCPU();
+        }
 
         public static void NearFullLoadCPU()
         {
