@@ -50,7 +50,9 @@
     <Compile Include="arr\FindOnce.cs" />
     <Compile Include="arr\FindOnlyOnce.cs" />
     <Compile Include="arr\FrogJump.cs" />
+    <Compile Include="arr\Leetcode1465.cs" />
     <Compile Include="arr\LeetCode75.cs" />
+    <Compile Include="arr\Leetcode801.cs" />
     <Compile Include="arr\MaximumLengthOfTargetSum.cs" />
     <Compile Include="BeautyOfProgramming\Ch1\Question1.cs" />
     <Compile Include="BeautyOfProgramming\Ch1\Question2.cs" />
