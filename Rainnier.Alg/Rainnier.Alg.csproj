@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Rainnier.Alg</RootNamespace>
     <AssemblyName>Rainnier.Alg</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -33,6 +33,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -69,10 +72,14 @@
     <Compile Include="linkList\HasLoop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="str\KMP.cs" />
+    <Compile Include="str\Leetcode214.cs" />
+    <Compile Include="str\Leetcode6.cs" />
     <Compile Include="str\MinimumContainesSubStr.cs" />
     <Compile Include="str\RemoveSpecialChar.cs" />
     <Compile Include="str\StringSubstitution.cs" />
     <Compile Include="tree\FindNextNode.cs" />
+    <Compile Include="tree\Leetcode572.cs" />
     <Compile Include="tree\model\Node.cs" />
     <Compile Include="tree\model\NodeWithParent.cs" />
   </ItemGroup>

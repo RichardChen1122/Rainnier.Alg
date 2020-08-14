@@ -7,3 +7,7 @@
 /.vs/Rainnier.Alg/v16
 /.vs/Rainnier.Alg/v15/Server/sqlite3
 /.vs/Rainnier.Alg/v15
+/packages/MSTest.TestAdapter.2.1.1/build
+/packages
+/Rainnier.Alg.Test/bin/Debug
+/Rainnier.Alg.Test/obj/Debug
