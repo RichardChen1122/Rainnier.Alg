@@ -17,19 +17,24 @@ namespace Rainnier.Alg
     {
         static void Main(string[] args)
         {
-            DemoGraph g = new DemoGraph();
-            g.AddVertex(1);
-            g.AddVertex(2);
-            g.AddVertex(3);
-            g.AddVertex(4);
-            g.AddVertex(5);
-            g.AddEdge(0, 1);
-            g.AddEdge(0, 2);
-            g.AddEdge(2, 3);
-            g.AddEdge(1, 3);
-            g.AddEdge(1, 4);
-            g.AddEdge(3, 4);
-            g.TopologySort();
+            var test = new Leetcode1439();
+            int[][] mat = new int[2][];
+            mat[0] = new int[3] { 1, 3, 11 };
+            mat[1] = new int[3] { 2, 4, 6 };
+            test.ShowSums(mat);
+            //DemoGraph g = new DemoGraph();
+            //g.AddVertex(1);
+            //g.AddVertex(2);
+            //g.AddVertex(3);
+            //g.AddVertex(4);
+            //g.AddVertex(5);
+            //g.AddEdge(0, 1);
+            //g.AddEdge(0, 2);
+            //g.AddEdge(2, 3);
+            //g.AddEdge(1, 3);
+            //g.AddEdge(1, 4);
+            //g.AddEdge(3, 4);
+            //g.TopologySort();
             Console.ReadKey();
 
 

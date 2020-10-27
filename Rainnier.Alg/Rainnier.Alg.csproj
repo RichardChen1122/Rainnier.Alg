@@ -53,6 +53,7 @@
     <Compile Include="arr\FindOnce.cs" />
     <Compile Include="arr\FindOnlyOnce.cs" />
     <Compile Include="arr\FrogJump.cs" />
+    <Compile Include="arr\Leetcode1439.cs" />
     <Compile Include="arr\Leetcode1465.cs" />
     <Compile Include="arr\LeetCode75.cs" />
     <Compile Include="arr\Leetcode801.cs" />

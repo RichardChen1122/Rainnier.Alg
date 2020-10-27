@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rainnier.Alg;
+using Rainnier.Alg.arr;
 using Rainnier.Alg.str;
 
 namespace Rainnier.Alg.Test
@@ -54,6 +55,19 @@ namespace Rainnier.Alg.Test
             var result = kmp.IsSubString("BBC ABCDAB ABCDABCDABDE", "ABCDABD");
 
             Assert.AreEqual(true, result);
+        }
+
+        [TestMethod]
+        public void LeetCode1439()
+        {
+            var lc1439 = new Leetcode1439();
+            int[][] mat = new int[2][];
+            mat[0] = new int[3] { 1, 3, 11 };
+            mat[1] = new int[3] { 2, 4, 6 };
+
+            var rr = lc1439.KthSmallest(mat, 5);
+
+            Assert.Equals(7, rr);
         }
     }
 }
