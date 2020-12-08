@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rainnier.Alg;
 using Rainnier.Alg.arr;
+using Rainnier.Alg.leetcode;
 using Rainnier.Alg.str;
 
 namespace Rainnier.Alg.Test
@@ -68,6 +69,55 @@ namespace Rainnier.Alg.Test
             var rr = lc1439.KthSmallest(mat, 5);
 
             Assert.Equals(7, rr);
+        }
+
+        [TestMethod]
+        //[["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
+        //[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+        public void LeetCode200()
+        {
+            var lc200 = new Leetcode200();
+            char[][] mat = new char[4][];
+            mat[0] = new char[5] { '1', '1', '0', '0', '0' };
+            mat[1] = new char[5] { '1', '1', '0', '0', '0' };
+            mat[2] = new char[5] { '0', '0', '1', '0', '0' };
+            mat[3] = new char[5] { '0', '0', '0', '1', '1' };
+
+            var rr = lc200.NumIslands(mat);
+
+            Assert.Equals(3, rr);
+        }
+
+        [TestMethod]
+        //[["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
+        //[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+        //[["1","1","1"],["1","0","1"],["1","1","1"]]
+        public void LeetCode200L2()
+        {
+            var lc200 = new Leetcode200();
+            char[][] mat = new char[3][];
+            mat[0] = new char[3] { '1', '1', '1' };
+            mat[1] = new char[3] { '1', '0', '1' };
+            mat[2] = new char[3] {  '1', '1', '1' };
+          
+
+            var rr = lc200.NumIslands(mat);
+
+            Assert.Equals(3, rr);
+        }
+
+        [TestMethod]
+        //[["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
+        //[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+        //[["1","1","1"],["1","0","1"],["1","1","1"]]
+        public void LeetCode164()
+        {
+            var lc164 = new Leetcode164();
+            int[] input = new int[2] { 1, 10000000 };
+            
+
+            var rr = lc164.MaximumGap(input);
+
         }
     }
 }
