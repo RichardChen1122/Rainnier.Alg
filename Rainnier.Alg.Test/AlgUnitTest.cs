@@ -94,7 +94,7 @@ namespace Rainnier.Alg.Test
         //[["1","1","1"],["1","0","1"],["1","1","1"]]
         public void LeetCode200L2()
         {
-            var lc200 = new Leetcode200();
+            var lc200 = new IslandNumber();
             char[][] mat = new char[3][];
             mat[0] = new char[3] { '1', '1', '1' };
             mat[1] = new char[3] { '1', '0', '1' };
@@ -103,13 +103,10 @@ namespace Rainnier.Alg.Test
 
             var rr = lc200.NumIslands(mat);
 
-            Assert.Equals(3, rr);
+            Assert.AreEqual(1, rr);
         }
 
         [TestMethod]
-        //[["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
-        //[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
-        //[["1","1","1"],["1","0","1"],["1","1","1"]]
         public void LeetCode164()
         {
             var lc164 = new Leetcode164();
@@ -118,6 +115,120 @@ namespace Rainnier.Alg.Test
 
             var rr = lc164.MaximumGap(input);
 
+        }
+
+        [TestMethod]
+        public void IslandNumber()
+        {
+            var lc200 = new IslandNumber();
+            char[][] mat = new char[4][];
+            mat[0] = new char[5] { '1', '1', '0', '0', '0' };
+            mat[1] = new char[5] { '1', '1', '0', '0', '0' };
+            mat[2] = new char[5] { '0', '0', '1', '0', '0' };
+            mat[3] = new char[5] { '0', '0', '0', '1', '1' };
+
+            var rr = lc200.NumIslands(mat);
+
+            Assert.AreEqual(3, rr);
+        }
+
+        [TestMethod]
+        public void leetCode445Test()
+        {
+            var lc200 = new Leetcode455();
+            char[][] mat = new char[4][];
+            var g = new int[3] { 1, 2, 3 };
+            var s = new int[2] { 1, 1 };
+
+            var rr = lc200.FindContentChildren(g,s);
+
+            Assert.AreEqual(1, rr);
+        }
+
+        [TestMethod]
+        public void JumpStepTest()
+        {
+            var lc200 = new Leetcode55();
+
+            var g = new int[5] { 2,3,1,1,4 };
+
+
+            var rr = lc200.JumpStep(g);
+
+            Assert.AreEqual(2, rr);
+        }
+
+        [TestMethod]
+        public void OverlapSpeaceTest()
+        {
+            var lc200 = new Leetcode435();
+
+            var input = new int[4][];
+            input[0] = new int[2] { 1, 2 };
+            input[1] = new int[2] { 2,3 };
+            input[2] = new int[2] { 3,4 };
+            input[3] = new int[2] { 1, 3 };
+
+
+            var rr = lc200.EraseOverlapIntervals(input);
+
+            Assert.AreEqual(2, rr);
+        }
+
+
+        [TestMethod]
+        public void LeetCode823Test()
+        {
+            var lc200 = new Leetcode823();
+
+            var input = new int[4] { 2,4,5,10};
+
+
+            var rr = lc200.NumFactoredBinaryTrees(input);
+
+            Assert.AreEqual(7, rr);
+        }
+
+
+        [TestMethod]
+        public void LeetCode17Test()
+        {
+            var lc200 = new Leetcode17();
+
+           var rr = lc200.LetterCombinations_2("23");
+
+            Assert.AreEqual(9, rr.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode39Test()
+        {
+            var lc200 = new Leetcode39();
+
+            var rr = lc200.CombinationSum_2(new int[3] { 2,3,5}, 8);
+
+            Assert.AreEqual(3, rr.Count);
+        }
+
+
+        [TestMethod]
+        public void LeetCode46Test()
+        {
+            var lc200 = new Leetcode46();
+
+            var rr = lc200.Permute(new int[3] { 1, 2, 3 });
+
+            Assert.AreEqual(6, rr.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode46Test_2()
+        {
+            var lc200 = new Leetcode46();
+
+            var rr = lc200.Permute_2(new int[3] { 1, 2, 3 });
+
+            Assert.AreEqual(6, rr.Count);
         }
     }
 }
