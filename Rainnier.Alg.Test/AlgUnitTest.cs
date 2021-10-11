@@ -230,5 +230,43 @@ namespace Rainnier.Alg.Test
 
             Assert.AreEqual(6, rr.Count);
         }
+
+        [TestMethod]
+        public void LeetCode135test()
+        {
+            var lc164 = new Leetcode135();
+            int[] input = new int[6] { 1,3,2,2,2,1 };
+            var rr = lc164.Candy(input);
+            
+            Assert.AreEqual(8, rr);
+        }
+
+        [TestMethod]
+        public void LeetCode135test3()
+        {
+            var lc164 = new Leetcode135();
+            int[] input = new int[5] { 1, 3, 2, 2, 1 };
+            var rr = lc164.Candy(input);
+
+            Assert.AreEqual(7, rr);
+        }
+
+        [TestMethod]
+        public void LeetCode135test2()
+        {
+            var lc164 = new Leetcode135();
+            int[] input2 = new int[3] { 1, 0, 2 };
+            var rr2 = lc164.Candy(input2);
+            Assert.AreEqual(5, rr2);
+        }
+
+        [TestMethod]
+        public void LeetCode135test4()
+        {
+            var lc164 = new Leetcode135();
+            int[] input2 = new int[7] { 1,6,10,8,7,3,2};
+            var rr2 = lc164.Candy(input2);
+            Assert.AreEqual(18, rr2);
+        }
     }
 }

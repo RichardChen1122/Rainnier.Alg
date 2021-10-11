@@ -70,6 +70,9 @@
     <Compile Include="graph\FindLoop.cs" />
     <Compile Include="graph\model\DemoGraph.cs" />
     <Compile Include="graph\model\Vertex.cs" />
+    <Compile Include="leetcode\DFSDemo.cs" />
+    <Compile Include="leetcode\Leetcode1046.cs" />
+    <Compile Include="leetcode\Leetcode135.cs" />
     <Compile Include="leetcode\Leetcode46.cs" />
     <Compile Include="leetcode\IslandNumber.cs" />
     <Compile Include="leetcode\Leetcode164.cs" />

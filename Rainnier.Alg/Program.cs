@@ -10,6 +10,7 @@ using Rainnier.Alg.BeautyOfProgramming.Ch2;
 using System.Collections;
 using Rainnier.Alg.linkList;
 using Rainnier.Alg.graph.model;
+using Rainnier.Alg.leetcode;
 
 namespace Rainnier.Alg
 {
@@ -17,6 +18,11 @@ namespace Rainnier.Alg
     {
         static void Main(string[] args)
         {
+            char[][] superArrayToTry = new char[3][] { new char[] { '1', '2', '3', '4' }, new char[] { '5', '6', '7', '8' }, new char[] { '9','A','B', 'C' } };
+            var dfsd = new DFSDemo();
+            dfsd.BFS(superArrayToTry);
+
+            Console.ReadKey();
             var test = new Leetcode1439();
             int[][] mat = new int[2][];
             mat[0] = new int[3] { 1, 3, 11 };
@@ -39,6 +45,7 @@ namespace Rainnier.Alg
 
 
             int[][] superArray = new int[3][] { new int[] { 4, 5 }, new int[] { 1, 2 }, new int[] { 4, 9 } };
+            
 
             Console.WriteLine(Question19.Solve(superArray, new int[] { 1, 6 }));
   
