@@ -11,7 +11,85 @@ namespace Rainnier.Alg.leetcode
 {
     public class Leetcode39
     {
-        
+        public IList<IList<int>> CombinationSum_4(int[] candidates, int target)
+        {
+            var result = new List<IList<int>>();
+            var length = candidates.Length;
+            if (length == 0)
+            {
+                return result;
+            }
+
+            Array.Sort(candidates);
+
+            var collection = new List<int>();
+            BackTrack_4(candidates, target, result, collection, 0);
+
+            return result;
+        }
+
+        private void BackTrack_4(int[] candidates, int target, IList<IList<int>> result, IList<int> collection, int index)
+        {
+            if(target == 0)
+            {
+                result.Add(new List<int>(collection));
+                return;
+            }
+
+            if (target < 0)
+            {
+                return;
+            }
+
+            for (int i = index; i < candidates.Length; i++)
+            {
+                if (candidates[i] > target)
+                {
+                    break;
+                }
+                collection.Add(candidates[i]);
+                BackTrack_4(candidates, target - candidates[i], result, collection, i);
+                collection.RemoveAt(collection.Count-1);
+            }
+        }
+
+        public IList<IList<int>> CombinationSum_3(int[] candidates, int target)
+        {
+
+            var result = new List<IList<int>>();
+            var length = candidates.Length;
+            if (length == 0)
+            {
+                return result;
+            }
+
+            var collection = new List<int>();
+
+            BackTrack(candidates, result, collection, 0, target);
+
+            return result;
+        }
+
+        private void BackTrack(int[] candidates, IList<IList<int>> result, IList<int> collection, int index, int target)
+        {
+            if(target == 0)
+            {
+                result.Add(new List<int>(collection));
+
+                return;
+            }
+
+            if (target < 0 || index == candidates.Length)
+            {
+                return;
+            }
+
+            BackTrack(candidates, result, collection, index +1, target);
+            collection.Add(candidates[index]);
+            BackTrack(candidates, result, collection, index, target - candidates[index]);
+            collection.RemoveAt(collection.Count-1) ;
+        }
+
         public List<List<int>> CombinationSum(int[] candidates, int target)
         {
             ValueTuple<int, List<List<int>>>[][] dp = new ValueTuple<int, List<List<int>>>[candidates.Length + 1][];

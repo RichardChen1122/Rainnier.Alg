@@ -268,5 +268,51 @@ namespace Rainnier.Alg.Test
             var rr2 = lc164.Candy(input2);
             Assert.AreEqual(18, rr2);
         }
+
+
+        [TestMethod]
+        public void LeetCode39test4()
+        {
+            var lc39 = new Leetcode39();
+            int[] input2 = new int[4] {2,7,3,6 };
+            var rr2 = lc39.CombinationSum_3(input2,7);
+            Assert.AreEqual(2, rr2.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode39test5()
+        {
+            var lc39 = new Leetcode39();
+            int[] input2 = new int[4] { 2, 7, 3, 6 };
+            var rr2 = lc39.CombinationSum_4(input2, 7);
+            Assert.AreEqual(2, rr2.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode40Test()
+        {
+            var lc39 = new Leetcode40();
+            int[] input2 = new int[5] { 2,5,2,1,2};
+            var rr2 = lc39.CombinationSum2(input2,5);
+            Assert.AreEqual(2, rr2.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode209Test()
+        {
+            var lc39 = new Leetcode209();
+            int[] input2 = new int[6] { 2, 3,1, 2, 4,3 };
+            var rr2 = lc39.MinSubArrayLen(7,input2);
+            Assert.AreEqual(2, rr2);
+        }
+
+        [TestMethod]
+        public void LeetCode239Test()
+        {
+            var lc39 = new Leetcode239();
+            int[] input2 = new int[8] { 1,3,-1,-3,5,3,6,7 };
+            var rr2 = lc39.MaxSlidingWindow( input2, 3);
+            Assert.AreEqual(2, rr2);
+        }
     }
 }

@@ -73,6 +73,9 @@
     <Compile Include="leetcode\DFSDemo.cs" />
     <Compile Include="leetcode\Leetcode1046.cs" />
     <Compile Include="leetcode\Leetcode135.cs" />
+    <Compile Include="leetcode\Leetcode209.cs" />
+    <Compile Include="leetcode\Leetcode239.cs" />
+    <Compile Include="leetcode\Leetcode40.cs" />
     <Compile Include="leetcode\Leetcode46.cs" />
     <Compile Include="leetcode\IslandNumber.cs" />
     <Compile Include="leetcode\Leetcode164.cs" />
@@ -86,7 +89,9 @@
     <Compile Include="leetcode\Leetcode767.cs" />
     <Compile Include="leetcode\Leetcode787.cs" />
     <Compile Include="leetcode\Leetcode823.cs" />
+    <Compile Include="leetcode\Leetocde210.cs" />
     <Compile Include="linkList\HasLoop.cs" />
+    <Compile Include="memory\GarbageCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="str\KMP.cs" />
