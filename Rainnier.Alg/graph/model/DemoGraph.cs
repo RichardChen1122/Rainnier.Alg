@@ -59,12 +59,15 @@ namespace Rainnier.Alg.graph.model
                 int j;
                 for (j = 0; j < numVerts; j++)
                 {
+                    //如果找到有边
                     if (adjmatrix[i, j] != 0)
                     {
+                        //直接退出
                         break;
                     }
                 }
 
+                //退出是因为中途退出还是遍历完了退出， 如果是中途退出说明有边， 那么继续
                 if (j == numVerts)
                 {
                     ret = i;

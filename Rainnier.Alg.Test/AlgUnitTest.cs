@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Management.Instrumentation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rainnier.Alg;
 using Rainnier.Alg.arr;
 using Rainnier.Alg.leetcode;
+using Rainnier.Alg.leetcode.Offer;
 using Rainnier.Alg.str;
 
 namespace Rainnier.Alg.Test
@@ -312,6 +314,79 @@ namespace Rainnier.Alg.Test
             var lc39 = new Leetcode239();
             int[] input2 = new int[8] { 1,3,-1,-3,5,3,6,7 };
             var rr2 = lc39.MaxSlidingWindow( input2, 3);
+            Assert.AreEqual(2, rr2);
+        }
+
+        [TestMethod]
+        public void LeetCode310Test()
+        {
+            var lc39 = new Leetcode310();
+            int[] input2 = new int[2] { 0,1 };
+            int[] input1 = new int[2] { 0,2 };
+            int[] input4 = new int[2] { 0,3 };
+            int[] input3 = new int[2] { 3,4 };
+            int[][] test = new int[4][];
+            test[0] = input2;
+            test[1] = input1;
+            test[2] = input3;
+            test[3] = input4;
+            var rr2 = lc39.FindMinHeightTrees(5, test);
+            Assert.AreEqual(2, rr2.Count);
+        }
+
+        [TestMethod]
+        public void LeetCode851Test()
+        {
+            var lc39 = new Leetcode851();
+            int[] input2 = new int[2] { 1,0 };
+            int[] input1 = new int[2] { 2,1 };
+            int[] input4 = new int[2] { 3,1 };
+            int[] input3 = new int[2] { 3, 7 };
+            int[] input5 = new int[2] { 4,3 };
+            int[] input6 = new int[2] { 5,3 };
+            int[] input7 = new int[2] { 6,3 };
+            int[][] test = new int[7][];
+            test[0] = input2;
+            test[1] = input1;
+            test[2] = input3;
+            test[3] = input4;
+            test[4] = input5;
+            test[5] = input6;
+            test[6] = input7;
+            var rr2 = lc39.LoudAndRich(test, new int[8] { 3,2,5,4,6,1,7,0});
+            Assert.AreEqual(2, rr2.Length);
+        }
+
+        [TestMethod]
+        public void LeetCode26Test()
+        {
+            var lc39 = new Leetcode26();
+            var rr2 = lc39.RemoveDuplicates(new int[3] { 1,2,2});
+            Assert.AreEqual(2, rr2);
+        }
+
+        [TestMethod]
+        public void LeetCode92Test()
+        {
+            var lc39 = new Leetcode92();
+            var node5 = new ListNode(5);
+            var node4 = new ListNode(4, node5);
+            var node3 = new ListNode(3, node4);
+            var node2 = new ListNode(2, node3);
+            var node1 = new ListNode(1, node2);
+            var rr2 = lc39.ReverseBetween(node1,2,4);
+            Assert.AreEqual(2, rr2);
+        }
+
+        [TestMethod]
+        public void Offer04Test()
+        {
+            var lc39 = new Offer04();
+            var a1 = new int[5] { 3, 5, 9, 9, 14 };
+            var a2 = new int[5] {7,8,11,15,15};
+            var a3 = new int[5] {8,10,16,16,17};
+            var intpu = new int[3][] { a1, a2, a3 };
+            var rr2 = lc39.FindNumberIn2DArray(intpu, 12);
             Assert.AreEqual(2, rr2);
         }
     }
