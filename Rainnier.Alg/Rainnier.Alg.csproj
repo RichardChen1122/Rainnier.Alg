@@ -74,6 +74,7 @@
     <Compile Include="leetcode\Leetcode1046.cs" />
     <Compile Include="leetcode\Leetcode135.cs" />
     <Compile Include="leetcode\Leetcode152.cs" />
+    <Compile Include="leetcode\Leetcode160.cs" />
     <Compile Include="leetcode\Leetcode1610.cs" />
     <Compile Include="leetcode\Leetcode19.cs" />
     <Compile Include="leetcode\Leetcode206.cs" />
@@ -101,11 +102,21 @@
     <Compile Include="leetcode\Leetcode851.cs" />
     <Compile Include="leetcode\Leetcode92.cs" />
     <Compile Include="leetcode\Leetocde210.cs" />
+    <Compile Include="leetcode\Offer45.cs" />
+    <Compile Include="leetcode\Offer\Offer15.cs" />
+    <Compile Include="leetcode\Offer\Offer05.cs" />
+    <Compile Include="leetcode\Offer\Offer07.cs" />
+    <Compile Include="leetcode\Offer\Offer13.cs" />
     <Compile Include="leetcode\Offer\Offer03.cs" />
     <Compile Include="leetcode\Offer\Offer04.cs" />
     <Compile Include="leetcode\Offer\Offer06.cs" />
     <Compile Include="leetcode\Offer\Offer09.cs" />
     <Compile Include="leetcode\Offer\Offer11.cs" />
+    <Compile Include="leetcode\Offer\Offer12.cs" />
+    <Compile Include="leetcode\Offer\Offer16.cs" />
+    <Compile Include="leetcode\Offer\Offer20.cs" />
+    <Compile Include="leetcode\Offer\Offer26.cs" />
+    <Compile Include="leetcode\Offer\Offer33.cs" />
     <Compile Include="leetcode\Offer\Offer54.cs" />
     <Compile Include="linkList\HasLoop.cs" />
     <Compile Include="memory\GarbageCollection.cs" />
@@ -121,6 +132,7 @@
     <Compile Include="tree\Leetcode572.cs" />
     <Compile Include="tree\model\Node.cs" />
     <Compile Include="tree\model\NodeWithParent.cs" />
+    <Compile Include="UnionSearch\UnionSearchClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

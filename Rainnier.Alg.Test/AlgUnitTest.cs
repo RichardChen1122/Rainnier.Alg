@@ -389,5 +389,35 @@ namespace Rainnier.Alg.Test
             var rr2 = lc39.FindNumberIn2DArray(intpu, 12);
             Assert.AreEqual(2, rr2);
         }
+
+        [TestMethod]
+        public void Offer12Test()
+        {
+            var lc39 = new Offer12();
+            var a1 = new char[4] { 'A', 'B','C','E' };
+            var a2 = new char[4] { 'S', 'F', 'C', 'S' };
+            var a3 = new char[4] { 'A', 'D', 'E', 'E' };
+            var intpu = new char[3][] { a1, a2, a3 };
+            var rr2 = lc39.Exist(intpu, "ABCCED");
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Offer16Test()
+        {
+            var lc39 = new Offer16();
+
+            var rr2 = lc39.MyPow(2.0, -2);
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Offer33Test()
+        {
+            var lc39 = new Offer33();
+
+            var rr2 = lc39.VerifyPostorder(new int[8] { 1,2,5,10,6,9,4,3});
+            Assert.AreEqual(false, rr2);
+        }
     }
 }

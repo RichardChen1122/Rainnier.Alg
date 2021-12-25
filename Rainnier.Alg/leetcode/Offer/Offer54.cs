@@ -18,9 +18,34 @@ namespace Rainnier.Alg.leetcode.Offer
 
     public class Offer54
     {
+
         public int KthLargest(TreeNode root, int k)
         {
-            return 0;
+            if (root == null)
+            {
+                return -1;
+            }
+            int count = 0;
+            var stack = new Stack<TreeNode>();
+
+            var current = root;
+            while(current != null)
+            {
+                stack.Push(current);
+                current = current.right;
+                while(current == null && stack.Count > 0)
+                {
+                    count++;
+                    var result = stack.Pop();
+                    current = result.left;
+                    if(count == k)
+                    {
+                        return result.val;
+                    }
+                }
+            }
+
+            return -1;
         }
     }
 }

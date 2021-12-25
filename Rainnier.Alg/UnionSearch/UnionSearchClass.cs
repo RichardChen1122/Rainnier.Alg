@@ -43,15 +43,6 @@ namespace Rainnier.Alg.UnionSearch
             father[Find(x)] = Find(y);
         }
 
-        public int Find_2(int x)
-        {
 
-            if (father[x] == x)
-            {
-                return x;
-            }
-            else
-
-        }
     }
 }
