@@ -71,12 +71,15 @@
     <Compile Include="graph\model\DemoGraph.cs" />
     <Compile Include="graph\model\Vertex.cs" />
     <Compile Include="leetcode\DFSDemo.cs" />
+    <Compile Include="leetcode\LCP\LCP40.cs" />
     <Compile Include="leetcode\Leetcode1046.cs" />
     <Compile Include="leetcode\Leetcode135.cs" />
+    <Compile Include="leetcode\Leetcode139.cs" />
     <Compile Include="leetcode\Leetcode152.cs" />
     <Compile Include="leetcode\Leetcode160.cs" />
     <Compile Include="leetcode\Leetcode1610.cs" />
     <Compile Include="leetcode\Leetcode19.cs" />
+    <Compile Include="leetcode\Leetcode1995.cs" />
     <Compile Include="leetcode\Leetcode206.cs" />
     <Compile Include="leetcode\Leetcode209.cs" />
     <Compile Include="leetcode\Leetcode238.cs" />
@@ -99,6 +102,7 @@
     <Compile Include="leetcode\Leetcode767.cs" />
     <Compile Include="leetcode\Leetcode787.cs" />
     <Compile Include="leetcode\Leetcode823.cs" />
+    <Compile Include="leetcode\Leetcode846.cs" />
     <Compile Include="leetcode\Leetcode851.cs" />
     <Compile Include="leetcode\Leetcode92.cs" />
     <Compile Include="leetcode\Leetocde210.cs" />
@@ -136,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="leetcode\Interview\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

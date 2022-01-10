@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rainnier.Alg.leetcode
+namespace Rainnier.Alg.leetcode.LCP
 {
-    public class Offer45
+    public class LCP40
     {
-        public string MinNumber(int[] nums)
+        public int MaxmiumScore(int[] cards, int cnt)
         {
-            return string.Empty;
+            return 0;
         }
     }
 }
