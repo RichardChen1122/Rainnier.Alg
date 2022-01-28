@@ -423,6 +423,165 @@ namespace Rainnier.Alg.Test
         }
 
         [TestMethod]
+        public void Offer17Test()
+        {
+            var lc39 = new Offer17();
+
+            var rr2 = lc39.printNumbers(3);
+            Assert.AreEqual(false, rr2);
+        }
+
+        //[3,30,34,5,9]
+
+        [TestMethod]
+        public void Offer45Test()
+        {
+            var lc39 = new Offer45();
+
+            lc39.QuickSort(new int[3] {1,1,1}, 0,2);
+            Assert.AreEqual(false, false);
+        }
+
+        [TestMethod]
+        public void Offer1823Test()
+        {
+            var lc39 = new Leetcode1823();
+
+            var ret = lc39.FindTheWinner(5,2);
+            Assert.AreEqual(3, ret);
+        }
+
+        [TestMethod]
+        public void Offer643Test()
+        {
+            var lc39 = new Leetcode643();
+
+            var ret = lc39.FindMaxAverage(new int[6] { 1, 12, -5, -6, 50, 3 },4);
+            Assert.AreEqual(3, ret);
+        }
+
+        [TestMethod]
+        public void OfferHanotaTest()
+        {
+            var lc39 = new Interview08_06();
+
+            var A = new List<int>() { 0 };
+            var B = new List<int>() ;
+            var C = new List<int>() ;
+            lc39.Hanota(A, B, C);
+            Assert.AreEqual(3, 3);
+        }
+
+        [TestMethod]
+        public void Leetcode16_01Test()
+        {
+            var lc39 = new Leetcode16_01();
+
+
+            var ret = lc39.DivingBoard(1,2,3);
+            Assert.AreEqual(3, 3);
+        }
+
+        [TestMethod]
+        public void Offer001_Test()
+        {
+            var lc39 = new Offer_001();
+
+
+            var ret = lc39.Divide(15,2);
+            Assert.AreEqual(7, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("{");
+            Assert.AreEqual(0, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test2()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("123456789");
+            Assert.AreEqual(9, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test3()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("123445{j[d]j}9");
+            Assert.AreEqual(14, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test4()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[3445{j[d]j}9");
+            Assert.AreEqual(12, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test5()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[34}45{j[d]j}9");
+            Assert.AreEqual(10, ret);
+        }
+        [TestMethod]
+        public void Interview_Test6()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[34}45{j[d]j}9{}");
+            Assert.AreEqual(12, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test7()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[34}45{j[d]j}9{12");
+            Assert.AreEqual(10, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test8()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[34}45{j[d]j}9[}{000000001223}]34{");
+            Assert.AreEqual(14, ret);
+        }
+
+        [TestMethod]
+        public void Interview_Test9()
+        {
+            var lc39 = new Interview();
+
+
+            var ret = lc39.ValidString("12[34]45{j[d]j}9]");
+            Assert.AreEqual(16, ret);
+        }
+
+        [TestMethod]
         public void Leetcode139Test()
         {
             var lc39 = new Leetcode139();
