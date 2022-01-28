@@ -72,6 +72,9 @@
     <Compile Include="graph\model\Vertex.cs" />
     <Compile Include="leetcode\DFSDemo.cs" />
     <Compile Include="leetcode\LCP\LCP40.cs" />
+    <Compile Include="leetcode\Leetcode300.cs" />
+    <Compile Include="leetcode\Leetcode354.cs" />
+    <Compile Include="leetcode\Leetcode747.cs" />
     <Compile Include="leetcode\Leetcode1046.cs" />
     <Compile Include="leetcode\Leetcode135.cs" />
     <Compile Include="leetcode\Leetcode139.cs" />

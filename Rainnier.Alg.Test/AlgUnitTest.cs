@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rainnier.Alg;
 using Rainnier.Alg.arr;
 using Rainnier.Alg.leetcode;
+using Rainnier.Alg.leetcode.LCP;
 using Rainnier.Alg.leetcode.Offer;
 using Rainnier.Alg.str;
 
@@ -493,6 +494,24 @@ namespace Rainnier.Alg.Test
 
             var rr2 = lc39.IsNStraightHand(new int[6] { 1,1,2,2,3,3 }, 2);
             Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void LCP40Test2()
+        {
+            var lc39 = new LCP40();
+
+            var rr2 = lc39.MaxmiumScore(new int[4] { 1, 3,4,5 }, 4);
+            Assert.AreEqual(18, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode300()
+        {
+            var lc39 = new Leetcode300();
+
+            var rr2 = lc39.LengthOfLIS2(new int[6] {0,1,0,3,2,3});
+            Assert.AreEqual(4, rr2);
         }
     }
 }
