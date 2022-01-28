@@ -579,5 +579,79 @@ namespace Rainnier.Alg.Test
             var ret = lc39.ValidString("12[34]45{j[d]j}9]");
             Assert.AreEqual(16, ret);
         }
+
+        [TestMethod]
+        public void Leetcode139Test()
+        {
+            var lc39 = new Leetcode139();
+
+            var rr2 = lc39.WordBreak("aaaaaaa", new List<string>() { "aaaa", "aaa"});
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode139Test2()
+        {
+            var lc39 = new Leetcode139();
+
+            var rr2 = lc39.WordBreak2("leetcode", new List<string>() { "leet", "code" });
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode139Test3()
+        {
+            var lc39 = new Leetcode139();
+
+            var rr2 = lc39.WordBreak3("leetcode", new List<string>() { "leet", "code" });
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode139Test4()
+        {
+            var lc39 = new Leetcode139();
+
+            var rr2 = lc39.WordBreak3("aaaaaaa", new List<string>() { "aaa", "aaaa" });
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode139Test5()
+        {
+            var lc39 = new Leetcode139();
+
+            var rr2 = lc39.WordBreak3("cars", new List<string>() { "car", "ca", "rs" });
+            Assert.AreEqual(true, rr2);
+        }
+
+        //[1,2,3,6,2,3,4,7,8]
+
+        [TestMethod]
+        public void Leetcode846Test5()
+        {
+            var lc39 = new Leetcode846();
+
+            var rr2 = lc39.IsNStraightHand(new int[9] { 1, 2, 3, 6, 2, 3, 4, 7, 8 },3);
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode846Test()
+        {
+            var lc39 = new Leetcode846();
+
+            var rr2 = lc39.IsNStraightHand(new int[2] { 5,1 }, 1);
+            Assert.AreEqual(true, rr2);
+        }
+
+        [TestMethod]
+        public void Leetcode846Test2()
+        {
+            var lc39 = new Leetcode846();
+
+            var rr2 = lc39.IsNStraightHand(new int[6] { 1,1,2,2,3,3 }, 2);
+            Assert.AreEqual(true, rr2);
+        }
     }
 }

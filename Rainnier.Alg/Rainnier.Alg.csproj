@@ -79,9 +79,11 @@
     <Compile Include="leetcode\Interview10_01.cs" />
     <Compile Include="leetcode\Interview16_15.cs" />
     <Compile Include="leetcode\Leetcode1013.cs" />
+    <Compile Include="leetcode\LCP\LCP40.cs" />
     <Compile Include="leetcode\Leetcode1046.cs" />
     <Compile Include="leetcode\Leetcode1078.cs" />
     <Compile Include="leetcode\Leetcode135.cs" />
+    <Compile Include="leetcode\Leetcode139.cs" />
     <Compile Include="leetcode\Leetcode152.cs" />
     <Compile Include="leetcode\Leetcode160.cs" />
     <Compile Include="leetcode\Leetcode1609.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="leetcode\Leetcode16_01.cs" />
     <Compile Include="leetcode\Leetcode1823.cs" />
     <Compile Include="leetcode\Leetcode19.cs" />
+    <Compile Include="leetcode\Leetcode1995.cs" />
     <Compile Include="leetcode\Leetcode206.cs" />
     <Compile Include="leetcode\Leetcode208.cs" />
     <Compile Include="leetcode\Leetcode209.cs" />
@@ -118,6 +121,7 @@
     <Compile Include="leetcode\Leetcode767.cs" />
     <Compile Include="leetcode\Leetcode787.cs" />
     <Compile Include="leetcode\Leetcode823.cs" />
+    <Compile Include="leetcode\Leetcode846.cs" />
     <Compile Include="leetcode\Leetcode825.cs" />
     <Compile Include="leetcode\Leetcode851.cs" />
     <Compile Include="leetcode\Leetcode92.cs" />
@@ -162,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="leetcode\Interview\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
