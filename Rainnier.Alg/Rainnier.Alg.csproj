@@ -168,6 +168,7 @@
     <Compile Include="tree\model\Node.cs" />
     <Compile Include="tree\model\NodeWithParent.cs" />
     <Compile Include="tree\model\Tree.cs" />
+    <Compile Include="tree\NodeSearch.cs" />
     <Compile Include="UnionSearch\UnionSearchClass.cs" />
   </ItemGroup>
   <ItemGroup>
