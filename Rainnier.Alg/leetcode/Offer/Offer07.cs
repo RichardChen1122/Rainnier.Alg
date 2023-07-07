@@ -1,4 +1,5 @@
 ﻿using Rainnier.Alg.memory;
+using Rainnier.Alg.tree.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,16 +14,6 @@ namespace Rainnier.Alg.leetcode.Offer
     {
         //Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
         //Output: [3,9,20,null,null,15,7]
-
-
-
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
 
         public TreeNode BuildTree(int[] preorder, int[] inorder)

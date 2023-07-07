@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Rainnier.Alg</RootNamespace>
     <AssemblyName>Rainnier.Alg</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -68,6 +68,8 @@
     <Compile Include="BeautyOfProgramming\Ch2\Question20.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question5.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question7.cs" />
+    <Compile Include="competition\basic\FindWindowSum.cs" />
+    <Compile Include="competition\basic\MultiplePointer.cs" />
     <Compile Include="graph\FindLoop.cs" />
     <Compile Include="graph\model\DemoGraph.cs" />
     <Compile Include="graph\model\Vertex.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="tree\Leetcode572.cs" />
     <Compile Include="tree\model\Node.cs" />
     <Compile Include="tree\model\NodeWithParent.cs" />
+    <Compile Include="tree\model\Tree.cs" />
     <Compile Include="UnionSearch\UnionSearchClass.cs" />
   </ItemGroup>
   <ItemGroup>

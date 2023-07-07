@@ -7,6 +7,7 @@ using Rainnier.Alg.arr;
 using Rainnier.Alg.leetcode;
 using Rainnier.Alg.leetcode.LCP;
 using Rainnier.Alg.leetcode.Offer;
+using Rainnier.Alg.tree.model;
 using Rainnier.Alg.str;
 
 namespace Rainnier.Alg.Test
