@@ -8,7 +8,7 @@ namespace Rainnier.Alg.UnionSearch
 {
     public class UnionSearchClass
     {
-        private int[] father = new int[10];
+        public int[] father = new int[10];
 
         private int[] surpressedFather = new int[10];
 
@@ -23,6 +23,7 @@ namespace Rainnier.Alg.UnionSearch
             }
         }
 
+        // 路径压缩
         public int Find(int x)
         {
             if (father[x] == x)
@@ -30,17 +31,34 @@ namespace Rainnier.Alg.UnionSearch
                 return x;
             }
             else
-            {
-                var fa =  Find(father[x]);
-                father[x] = fa;
+            { 
+                father[x] = Find(father[x]);
 
-                return fa;
+                return father[x];
+            }
+        }
+
+        // 没有路径压缩
+        public int SlowFind(int x)
+        {
+            if (father[x] == x)
+            {
+                return x;
+            }
+            else
+            {
+                return SlowFind(father[x]);
             }
         }
 
         public void Merge(int x, int y)
         {
             father[Find(x)] = Find(y);
+        }
+
+        public void SlowMerge(int x, int y)
+        {
+            father[SlowFind(x)] = SlowFind(y);
         }
 
 
