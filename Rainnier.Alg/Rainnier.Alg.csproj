@@ -69,6 +69,7 @@
     <Compile Include="BeautyOfProgramming\Ch2\Question5.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question7.cs" />
     <Compile Include="competition\basic\FindWindowSum.cs" />
+    <Compile Include="competition\basic\FullPermutation.cs" />
     <Compile Include="competition\basic\HanNuoTa.cs" />
     <Compile Include="competition\basic\MultiplePointer.cs" />
     <Compile Include="graph\FindLoop.cs" />

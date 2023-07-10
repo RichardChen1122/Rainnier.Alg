@@ -16,5 +16,16 @@ namespace Rainnier.Alg.Test.competition.basic
 
             Assert.IsNotNull(h);
         }
+
+
+        [TestMethod]
+        public void FullPermutation()
+        {
+            var h = new FullPermutation();
+
+            var r = h.Execute("abc");
+
+            Assert.AreEqual(6, r.Count);
+        }
     }
 }
