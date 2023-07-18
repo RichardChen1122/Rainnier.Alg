@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Rainnier.Alg.graph.model
 {
-    class Vertex
+    public class Vertex
     {
         public int Data { get; set; }
+
+        public bool Visited { get; set; }
 
         public Vertex(int data)
         {
             Data = data;
+            Visited = false;
         }
     }
 }

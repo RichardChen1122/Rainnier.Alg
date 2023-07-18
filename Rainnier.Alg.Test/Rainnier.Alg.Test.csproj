@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="AlgUnitTest.cs" />
     <Compile Include="competition\basic\UnitTest1.cs" />
+    <Compile Include="competition\search\SearchTest.cs" />
+    <Compile Include="graph\GraphTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tree\TreeTests.cs" />
     <Compile Include="UnionSearch\UnionSearchTest.cs" />
