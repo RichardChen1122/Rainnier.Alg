@@ -68,6 +68,10 @@
     <Compile Include="BeautyOfProgramming\Ch2\Question20.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question5.cs" />
     <Compile Include="BeautyOfProgramming\Ch2\Question7.cs" />
+    <Compile Include="competition\advanced\BinaryIndexedTree.cs" />
+    <Compile Include="competition\advanced\KdTree.cs" />
+    <Compile Include="competition\advanced\SegmentTree.cs" />
+    <Compile Include="competition\advanced\SkipList.cs" />
     <Compile Include="competition\basic\FindWindowSum.cs" />
     <Compile Include="competition\basic\FullPermutation.cs" />
     <Compile Include="competition\basic\HanNuoTa.cs" />

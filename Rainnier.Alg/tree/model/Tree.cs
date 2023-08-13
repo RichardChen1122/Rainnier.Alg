@@ -19,4 +19,5 @@ namespace Rainnier.Alg.tree.model
             this.right = right;
         }
     }
+
 }

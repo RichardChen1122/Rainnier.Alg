@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgUnitTest.cs" />
+    <Compile Include="competition\advanced\advancedTests.cs" />
     <Compile Include="competition\basic\UnitTest1.cs" />
     <Compile Include="competition\search\SearchTest.cs" />
     <Compile Include="graph\GraphTests.cs" />
